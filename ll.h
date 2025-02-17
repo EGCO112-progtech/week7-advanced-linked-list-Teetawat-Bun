@@ -18,6 +18,7 @@ void insert( LLPtr *sPtr, int value ,char nee[]);
 void printList( LLPtr currentPtr );
 void printListR( LLPtr currentPtr );
 void instructions( void );
+int  deleteall(LLPtr *sPtr);
 
 
 // display program instructions to user
@@ -117,6 +118,15 @@ int deletes( LLPtr *sPtr, int value )
 
    return '\0';
 } // end function delete
+
+int  deleteall(LLPtr *sPtr){
+   printf("Clear all nodes\n");
+   while(*sPtr)
+   {
+      printf("%d deletes. \n", (*sPtr)->data);
+      deletes(sPtr,(*sPtr)->data);
+   }
+}
 
 // return 1 if the list is empty, 0 otherwise
 int isEmpty( LLPtr sPtr )

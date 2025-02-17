@@ -58,7 +58,6 @@ int main( void )
       scanf( "%u", &choice );
    } // end while
   /* Clear all nodes at the end of nodes*/
-   puts("clear all nodes");
-   //gitwhile()
+   deleteall(&startPtr);
    puts( "End of run." );
 } // end main
