@@ -59,6 +59,6 @@ int main( void )
    } // end while
   /* Clear all nodes at the end of nodes*/
    puts("clear all nodes");
-   //while()
+   //gitwhile()
    puts( "End of run." );
 } // end main
